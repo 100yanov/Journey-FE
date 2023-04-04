@@ -1,0 +1,23 @@
+﻿
+<div>
+    @for (int row = 0; row < Rows; row++)
+    {
+        <div class="hexagon-container">
+            @for (var col = 0; col < Columns; col++)
+           {
+               <div class="hexagon">
+                   <div class="hexagon-content">
+                       @($"{row},{col}")
+                   </div>
+               </div>
+           }
+        </div>
+    }
+</div>
+
+@code {
+    [Parameter]
+    public int Rows { get; set; }
+    [Parameter]
+    public int Columns { get; set; }
+    }
