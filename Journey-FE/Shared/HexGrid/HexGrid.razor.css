@@ -1,4 +1,5 @@
 ﻿.hexagon-container {
+    resize: none;
     display: flex;
     justify-content: center;
 }

@@ -2,20 +2,13 @@
 @inject HttpClient Http
 
 <PageTitle>Index</PageTitle>
-
-<h1>@message</h1>
-
-<div>
+<div class="map-container" >
     <HexGrid Rows=10 Columns=10 ></HexGrid>
 </div>
-<SurveyPrompt Title="How is Blazor working for you?" />
 
 @code {
-    private string? message;
-
-    //protected override async Task OnInitializedAsync()
-    //{
-    //    var result =  (await Http.GetStringAsync("api/Home"));
-    //    message = result;
-    //}   
+    protected override Task OnInitializedAsync()
+    {
+        return base.OnInitializedAsync();
+    }
 }

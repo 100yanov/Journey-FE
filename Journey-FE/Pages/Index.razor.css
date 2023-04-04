@@ -1,0 +1,7 @@
+﻿.map-container {
+	border-radius: 4px;
+	height: 50%;
+	max-width: 50%;
+	overflow: auto;
+	display: flex;
+}
